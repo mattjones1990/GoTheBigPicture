@@ -17,7 +17,7 @@ func main() {
 			name = names[0]
 		}
 
-		// w.Write([]byte("Hello " + name))
+		w.Write([]byte("Hello " + name))
 		m := map[string]string{"name": name}
 		enc := json.NewEncoder(w)
 		enc.Encode(m)
